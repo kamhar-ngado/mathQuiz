@@ -1,3 +1,13 @@
+var h1 = document.querySelector("h1");
+h1.className = "cool";
+
+
+function myFunction() {
+  var element = document.getElementById("ans1");
+  element.classList.toggle("green");
+}
+
+
 var submit = function () {
   var radios = document.getElementsByName("MC1");
   var val = "";
@@ -9,10 +19,10 @@ var submit = function () {
   }
 
   if (val == "") {
-    alert("please select choice answer");
+    console.log("please select choice answer");
   } else if (val == "correct") {
-    alert("Answer is correct !");
+    console.log("Answer is correct !");
   } else {
-    alert("Answer is wrong");
+    console.log("Answer is wrong");
   }
 };
