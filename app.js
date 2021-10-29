@@ -1,12 +1,35 @@
-var h1 = document.querySelector("h1");
+let h1 = document.querySelector("h1");
 h1.className = "cool";
 
-var submit = function () {
-  var element = document.getElementById("ans1");
-
-  var radios = document.getElementsByName("MC1");
+// number 1
+var check1 = function () {
+  let ans1D = document.getElementById("ans1D");
+  let radios = document.getElementsByName("MC1");
   var val = "";
-  for (var i = 0, length = radios.length; i < length; i++) {
+  for (let i = 0, length = radios.length; i < length; i++) {
+    if (radios[i].checked) {
+      val = radios[i].value;
+      break;
+    }
+  }
+
+  if (val == "") {
+    alert("please select choice answer");
+  } else if (val == "correct1") {
+    ans1D.classList.toggle("green");
+    alert("Answer is correct !");
+  } else {
+    ans1D.classList.remove("green");
+    alert("Answer is wrong");
+  }
+};
+
+// number 2
+var check2 = function () {
+  let ans2C = document.getElementById("ans2C");
+  let radios = document.getElementsByName("MC2");
+  var val = "";
+  for (let i = 0, length = radios.length; i < length; i++) {
     if (radios[i].checked) {
       val = radios[i].value;
       break;
@@ -15,11 +38,11 @@ var submit = function () {
 
   if (val == "") {
     console.log("please select choice answer");
-  } else if (val == "correct") {
-    element.classList.toggle("green");
-    console.log("Answer is correct !");
+  } else if (val == "correct2") {
+    ans2C.classList.toggle("green");
+    alert("Answer is correct !");
   } else {
-    element.classList.remove("green");
-    console.log("Answer is wrong");
+    ans2C.classList.remove("green");
+    alert("Answer is wrong");
   }
 };

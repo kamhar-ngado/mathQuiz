@@ -21,37 +21,40 @@
       <!-- number 1 -->
       <li>
         Himpunan penyelesaian \(|x^2-2|-6+2x<0\) adalah ...<br />
-        <input type="radio" id="A1" name="MC1" value="correct" />A.
-        <label id="ans1" for="A">\(\left\{ {x:{\rm{ }} - 4 < x < 5} \right\}\)</label
+        <input type="radio" id="A1" name="MC1" value="uncorrect" />A.
+        <label for="A">\(\left\{ {x:{\rm{ }} - 4 < x < 5} \right\}\)</label
         ><br />
         <input type="radio" id="B1" name="MC1" value="uncorrect" />B.
         <label for="B">\(\left\{ {x:{\rm{ }} x < 3} \right\}\)</label><br />
         <input type="radio" id="C1" name="MC1" value="uncorrect" />C.
         <label for="C">\(\left\{ {x:{\rm{ }} x > 3} \right\}\)</label><br />
-        <input type="radio" id="D1" name="MC1" value="uncorrect" />D.
-        <label for="D">\(\left\{ {x:{\rm{ }} - 4 < x < 2} \right\}\)</label
+        <input type="radio" id="D1" name="MC1" value="correct1" />D.
+        <label id="ans1D" for="D"
+          >\(\left\{ {x:{\rm{ }} - 4 < x < 2} \right\}\)</label
         ><br />
         <input type="radio" id="E1" name="MC1" value="uncorrect" />E.
         <label for="E">\(\left\{ {x:{\rm{ }} x < 2} \right\}\)</label><br />
       </li>
-
+      <button onclick="check1()">check</button>
       <!-- number 2 -->
       <li>
         Himpunan niali x yang memenuhi pertidaksamaan \(|2-|x-3||\ge2 \) adalah
         ... <br />
-        <input type="radio" id="A2" name="MC2" />A.
+        <input type="radio" id="A2" name="MC2" value="uncorrect" />A.
         <label for="A">\(\left\{ {x:{\rm{ }} x \ge 5} \right\}\)</label><br />
-        <input type="radio" id="B2" name="MC2" />B.
+        <input type="radio" id="B2" name="MC2" value="uncorrect" />B.
         <label for="B">\(\left\{ {x:{\rm{ }} x > 4} \right\}\)</label><br />
-        <input type="radio" id="C2" name="MC2" />C.
-        <label for="C">\(\left\{ {x:{\rm{ }} x \le 3} \right\}\)</label><br />
-        <input type="radio" id="D2" name="MC2" />D.
+        <input type="radio" id="C2" name="MC2" value="correct2" />C.
+        <label id="ans2C" for="C"
+          >\(\left\{ {x:{\rm{ }} x \le 3} \right\}\)</label
+        ><br />
+        <input type="radio" id="D2" name="MC2" value="uncorrect" />D.
         <label for="D">\(\left\{ {x:{\rm{ }} x < -1} \right\}\)</label><br />
-        <input type="radio" id="E2" name="MC2" />E.
+        <input type="radio" id="E2" name="MC2" value="uncorrect" />E.
         <label for="E">\(\left\{ {x:{\rm{ }} x \ge -7} \right\}\)</label><br />
       </li>
+      <button onclick="check2()">check</button>
     </ol>
-    <button onclick="submit()">Submit</button>
   </body>
   <script src="app.js"></script>
 </html>
