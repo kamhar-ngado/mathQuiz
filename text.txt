@@ -1,2 +1,0 @@
-Build E-learning math-web using html, css, LaTex and JavaScript.
-Kita akan membuat media pembelajaran matematika berupa latihan soal matematika multiple choice pakai html, css, LaTex dan bahasa pemrograman JavaScript tanpa bootstrap kemudian kita akan deploy website ini menggunakan domain dan hosting gratis milik netlify sehingga website ini dapat di akses oleh siswa secara online, saya kasih spoiler seperti ini website yang akan kita buat, ini proyek open source. source code dari proyek ini dapat di download di akun github saya  

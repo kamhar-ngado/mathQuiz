@@ -2,7 +2,7 @@ let h1 = document.querySelector("h1");
 h1.className = "cool";
 
 // number 1
-var check1 = function () {
+function check1() {
   let ans1D = document.getElementById("ans1D");
   let radios = document.getElementsByName("MC1");
   var val = "";
@@ -22,10 +22,10 @@ var check1 = function () {
     ans1D.classList.remove("green");
     alert("Answer is wrong");
   }
-};
+}
 
 // number 2
-var check2 = function () {
+function check2() {
   let ans2C = document.getElementById("ans2C");
   let radios = document.getElementsByName("MC2");
   var val = "";
@@ -45,4 +45,4 @@ var check2 = function () {
     ans2C.classList.remove("green");
     alert("Answer is wrong");
   }
-};
+}
